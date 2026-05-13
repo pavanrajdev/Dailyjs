@@ -3,11 +3,11 @@
 //helps achieve private variables and state maintainance(react);
 
 function outerCounter(){
-  let count=0;
+  let count=0;//we can encapsulate a variable to make it private
   function innerCounter(){
     console.log(++count);
   }
-  function getCount(){//lexical scope
+  function getCount(){
     return count;
   }
   return {innerCounter,getCount};
@@ -16,4 +16,5 @@ function outerCounter(){
 const counter=outerCounter();
 counter.innerCounter();
 counter.innerCounter();
+//counter.count -->undefined as it now behaves like a private variable cant accessed outside
 console.log(counter.getCount());
