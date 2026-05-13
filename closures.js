@@ -7,7 +7,7 @@ function outerCounter(){
   function innerCounter(){
     console.log(++count);
   }
-  function getCount(){
+  function getCount(){//lexical scope
     return count;
   }
   return {innerCounter,getCount};
