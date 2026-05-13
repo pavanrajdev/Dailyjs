@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .small{
+            background-color: blue;
+            height:100px;
+            width:150px;
+        }
+        .big{
+            background-color: blue;
+            height:250px;
+            width:300px;
+        }
+        .blue{
+            background-color:blue;
+            height:200px;
+            width:300px;
+        }
+        .red{
+            background-color:red;
+            height:200px;
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">this is h1</h1>
+    <button class="btn">click</button>
+    <button class="btn">click</button>
+    <button class="btn">click</button>
+    <button class="btn">click</button>
+    <button class="btn">click</button>
+    <button class="btn">click</button>
+    
+    <p id="p1">this is para</p>
+    <h3 id="h3" style="display:none;">this is hidden</h3>
+    <button id="contentbtn">click to read hidden contnent</button>
+    <button id="unhide">click to unhide</button>
+
+    <div id="d1">d1</div>
+    <button id="d1btn" onclick="red()">clicktoresize</button>
+    <button id="d1btn" onclick="blue()">clicktoresize</button>
+
+    <div id="d2" class="small">d2</div>
+    <button id="d2btn" onclick="tgl()">toggle</button>
+    <script src="Dom.js"></script>
+</body>
+</html>

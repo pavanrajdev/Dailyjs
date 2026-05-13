@@ -44,7 +44,6 @@ const worker={
 
 console.log(worker);
 
-
 //object to json
 const j=JSON.stringify(person);
 
