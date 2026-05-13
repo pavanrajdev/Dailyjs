@@ -1,7 +1,7 @@
 //js is runned in 2 phases
 //1.Memory creation
 //2.execution
-//during memory creation the declarations(not initializations) moved on top of theie scop before execution this is called hoisting
+//during memory creation the declarations(not initializations) moved on top of their scope before execution this is called hoisting
 //diffrent variables hosting
 //1.var-->hoisted and initialized as undefined 2.let-->hoisted but not initialized,3.const-->hoisted but not initialized
 //so we can call var variable before declaring only 
