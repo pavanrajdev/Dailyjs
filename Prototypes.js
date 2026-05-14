@@ -6,7 +6,7 @@
 //This prototype object is shared by all objects created using new
 
 
-function Person(name) {
+function Person(name) {//function constructor-->used before es6
   this.name = name;
   Person.prototype.add=function add1(a,b){
     return a+b;
@@ -46,7 +46,6 @@ console.log(p1.mul(2,3));
 //console.log(p1.prototype);-->this is undefined because it it object
 
 console.log(p1.add1 === p2.add1);//returns true because of prototypes else it would return false
-
 
 
 
@@ -95,3 +94,31 @@ const s1 = new Student("Pavan", "JavaScript");
 s1.eat();       // from Animal
 s1.sayHello();  // from Person
 s1.study();     // from Student
+
+//so even classes in js uses prototype inheritance inside of them 
+
+
+class Bird{
+  constructor(name,age){
+    this.name=name;
+    this.age=age;
+  }
+ fly(){
+  console.log("fly");
+  }
+   eats(){
+  console.log("eats");
+  }
+}
+class Pegion extends Bird{
+  
+}
+class kivi extends Bird{
+  
+  fly(){
+    console.log("dont fly");
+  }
+}
+
+const ob=new kivi("glenn",23);
+ob.fly();
