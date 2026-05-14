@@ -24,6 +24,17 @@ person.show();//pavan (so this = obj)
 
 
 //3. this in Arrow Function  (it take this from their surrounding (lexical scope))
+
+// const obj = {
+//   name: "Pavan",
+//   show: () => {
+//     console.log(this.name);
+//   }
+// };
+
+// obj.show();//undefined
+
+
 const obj = {
   name: "Pavan",
   show: function () {

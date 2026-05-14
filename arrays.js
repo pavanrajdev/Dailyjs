@@ -48,10 +48,25 @@ const [fele,sele]=num1;
 console.log(`${fele} and ${sele}`);
 
 const num2=[10,20,30,40,50,20,20,20];
-//spread operator to add arrays
 
+//spread operator to add arrays 
+//Expands elements
 const num3=[...num1,...num2];
 console.log(num3);
+
+
+//rest operator ...
+//Collects elements Used in function parameters / destructuring
+function sum(...numbers) {
+    return numbers.reduce((a, b) => a + b);
+}
+//rest on destructuring
+let [first, ...rest] = [10, 20, 30, 40];
+
+console.log(first); // 10
+console.log(rest);  // [20,30,40]
+
+console.log(sum(1, 2, 3, 4)); // 10
 
 const multidymention=[1,2,3,4,5,[10,20,30,40,[100,200,300,400],50,60],6];
 console.log(multidymention);
