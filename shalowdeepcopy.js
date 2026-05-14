@@ -1,4 +1,4 @@
-const _=require('lodash');
+const _=require('lodash');//import lodash from node (npm install lodash);
 let person1={
     name:"pavan",
     skills:{
